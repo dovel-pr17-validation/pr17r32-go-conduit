@@ -121,7 +121,7 @@ jobs:
       # an issue. Without this the only record is a red run nobody opens.
       - name: File an issue on failure
         if: failure() && github.event_name != 'pull_request'
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const title = 'Broken links found in front-door docs';

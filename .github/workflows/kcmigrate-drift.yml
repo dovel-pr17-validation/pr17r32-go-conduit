@@ -126,7 +126,7 @@ jobs:
           name: drift-report
 
       - name: File or update the issue
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs');
